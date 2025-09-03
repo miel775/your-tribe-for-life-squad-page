@@ -6,6 +6,9 @@
 
 <ul>
   {#each data.squad as member}
-    <li>{member.name}</li>
+    <li>
+      <a href="/{member.id}">{member.name}</a>
+      <img src="{member.avatar}" alt="{member.name}" width="100" />
+    </li>
   {/each}
 </ul>
