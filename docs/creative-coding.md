@@ -13,7 +13,7 @@ Je leert hoe je met behulp van shapes, direction, easing en timing een eigen 'co
 
  (*) GSAP als we tijd hebben :)
 
-## Werkwijze
+## Workshop planning
 1. **Intro over motion language en type animaties**
 2. **Inspiratie verzamelen**  
 
