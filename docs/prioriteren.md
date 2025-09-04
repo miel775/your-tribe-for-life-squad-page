@@ -69,7 +69,7 @@ Met MoSCoW bepaal je welke user stories belangrijker zijn dan andere:
 - Vergelijk jullie eigen inschattingen met een ander team: waar verschillen jullie en waarom?  
 - Analyseer achteraf: hoeveel stories bleken lastiger of makkelijker dan je dacht?  
 
-### Checkout
+### Leervragen
 
 1. Hoe helpt het schrijven van user stories je om vanuit de gebruiker te denken?  
 2. Hoe werkte planning poker in jullie team: was er discussie, en wat leer je daarvan?  

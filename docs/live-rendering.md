@@ -34,6 +34,22 @@ Directus heeft een endpoint voor de squads en personen. Hierin kun je per jaar d
 
 2. Nu je de squads hebt kun je de personen ophalen en hun data.
 
+3. Maak deze experimenten:
+
+👉 Experiment 1: Een lijst van mensen gesorteerd op name, asc
+
+👉 Experiment 2: Een lijst van mensen die beginnen met de letter D
+
+👉 Experiment 3: Een lijst met mensen die niet beginnen met de letter K
+
+👉 Experiment 4: Een lijst van mensen die geboren zijn voor 2000
+
+👉 Experiment 5: Een lijst van mensen die geboren zijn tussen 2000 - 2008
+
+👉 Experiment 6: Haal een lijst van alle unieke fav_tag op, en laat zien hoeveel mensen die tag hebben
+
+👉 Experiment 7: Haal een lijst op van iedereen met de role "squad_leader"
+
 _💡 ProTip: Lees nog eens de [instructies](https://github.com/fdnd-task/server-side-rendering-server-side-website/blob/main/docs/data-filtering-en-template-filters.md) van jaar 1 door als je bent vergeten hoe filteren werkt._
 
 #### Extra bronnen
@@ -56,8 +72,12 @@ Maak een overzichtspagina en een detailpagina voor je project op basis van de RA
 
 - Zoek een manier om dezelfde data niet meermaals op te halen
 - Begin component-based met het opzetten van je templates
+- Genereer een lijst met squad_leaders in je templates
 
-### Checkout
+### Leervragen
 
-1. Welke verschillen merk je tussen het ophalen van data in Node+Liquid (jaar 1) en in Svelte+SvelteKit?
-2. Waar liep je vast, en hoe heb je dat opgelost?
+Zet de antwoorden in je learning journal.
+
+- Welke verschillen merk je tussen het ophalen van data in Node+Liquid (jaar 1) en in Svelte+SvelteKit?
+- Waar liep je vast, en hoe heb je dat opgelost? 
+
