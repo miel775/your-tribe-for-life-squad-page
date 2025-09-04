@@ -44,6 +44,7 @@ Je leert hoe je met behulp van shapes, direction, easing en timing een eigen 'co
 **View transitions:**
 - [View Transitions API (MDN)](https://developer.chrome.com/docs/web-platform/view-transitions/)
 - [Aspect ratio en VT (Jake Archibald)](https://jakearchibald.com/2024/view-transitions-handling-aspect-ratio-changes/)
+- [Mijn CSS Day presentatie](https://conffab.com/presentation/css-tried-to-come-for-my-job-a-practical-guide-to-view-transitions-for-creative-developers/?gl=5K8hUX3fk4Qw)
 - [View transition in de praktijk (mijn blog 😅)](https://cydstumpel.nl/a-practical-guide-to-the-css-view-transition-api/)
 - [View transition old & new (mijn blog 😅)](https://cydstumpel.nl/being-lazy-with-view-transition-old-and-new/)
 
