@@ -22,6 +22,9 @@
   - Leerdoelen delen & bespreekbaar maken.
  
   ## Teamcanvas
+
+<img width="595" height="426" alt="Scherm­afbeelding 2025-09-05 om 10 33 04" src="https://github.com/user-attachments/assets/14dfe101-9cc3-4229-8f5d-0857f2f9ca93" />
+
  
 ## `Code conventies`
 https://github.com/fdnd-agency/.github/wiki/Conventions
