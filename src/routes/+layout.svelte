@@ -8,10 +8,4 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<style>
-	body {
-		background-color: darkblue;
-	}
-</style>
-
 {@render children?.()}
