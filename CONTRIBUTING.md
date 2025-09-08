@@ -101,3 +101,18 @@ Als je feedback krijgt van een teamlid:
 - Waar moet de reviewer op letten?
 - Feedback of hulpvraag
 ```
+
+## Naming Animations
+
+Wanneer er animaties worden gemaakt zoals loading en view-transitions gebruiken we deze regels
+
+We gebruiken loading en view-transitions
+
+### Consistent Animation rules
+- Zoom transition
+- Fade transition
+
+### Benaming van classes
+-paginanaam-component-actie-(x)
+
+
