@@ -19,4 +19,7 @@ Redesign je visitekaartje op basis van een headless CMS Directus en het framewor
 -->
 
 ### Leervragen
+
+Zet de antwoorden in je learning journal.
+
 <!-- Een drietal vragen die ze kunnen opnemen in hun learning journal, waar de squadleaders dan weer op terug komen op vrijdag. -->

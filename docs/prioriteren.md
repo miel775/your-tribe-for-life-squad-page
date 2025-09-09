@@ -6,45 +6,52 @@ Over het beschrijven, prioriteren en inschatten van werk voor je project.
 
 ### Doel van de opdracht
 
-- Je kunt user stories schrijven vanuit een gebruikersperspectief
+- Je kunt epics & user stories schrijven vanuit een gebruikersperspectief
 - Je kunt keuzes maken en prioriteren met behulp van MoSCoW
 - Je kunt met planning poker (scrum, Fibonacci-reeks) gezamenlijk tijd inschatten
 
 ### Werkwijze
 
-Vorig jaar hebben jullie al kennisgemaakt met **MoSCoW** om prioriteiten te stellen. Dit jaar breiden we dat uit met het schrijven van **user stories** en het inschatten van werk via **planning poker**.  
+Vorig jaar hebben jullie al kennisgemaakt met **MoSCoW** om prioriteiten te stellen. Dit jaar breiden we dat uit met het schrijven van **epics**, **user stories** en het inschatten van werk met behulp van **planning poker**.  
 
 In deze workshop ga je zelf onderzoeken wat deze technieken zijn, hoe ze werken en hoe je ze kunt inzetten voor je eigen projecten.  
 
 Dit verdelen we in drie onderwerpen:
-1. User stories
+1. Epics & User stories
 2. Planning poker
 3. MoSCoW prioriteren
+4. Werk inplannen
 
-### User Stories
+### Epics & User Stories
+
+Epics zijn een handige manier om werk te organiseren en een hiërarchie te creëren. Het idee is om werk op te splitsen in opleverbare stukken, zodat grote projecten kunnen worden afgerond en klanten op regelmatige basis waarde krijgen. Epics helpen teams werk op te splitsen terwijl ze naar een groter doel toewerken.
+
+Epics zijn dus grote stukken werk die kunnen worden opgesplitst in kleinere taken, die vervolgens in sprints kunnen worden voltooid. Dit helpt teams om gefocust te blijven en om regelmatig waarde te leveren aan hun klanten.
 
 User stories helpen je om de wensen en behoeftes van je gebruiker concreet te maken. Ze bestaan vaak uit een korte zin in de vorm van: Als [type gebruiker] wil ik [actie] zodat [toegevoegde waarde].  
 
-**🛠️ Opdracht**:  
-1. Zoek met je team online naar voorbeelden van user stories 
-2. Bepaal welk type gebruiker jullie site gaat gebruiken
-3. Schrijf individueel minstens 5 user stories die nu relevant zijn voor jullie project op stickies en plak ze op het bord
-4. Bespreek in je team welke stories het belangrijkst zijn voor de gebruiker
+**🛠️ Opdracht 1 - 15 minuten**:
+1. Zoek met je team online naar voorbeelden van epics, schrijf er 1 op het bord
+2. Zoek met je team online naar voorbeelden van user stories, schrijf er 2 op het bord
+3. Bepaal welk type gebruiker jullie site gaat gebruiken
 
-#### Extra bronnen
+**🛠️ Opdracht 2 - 30 minuten**:
+1. Maak in retrospect een ‘epic’, user stories, en taken voor jullie squadpage
+
+<!-- #### Extra bronnen
 - [User stories @ Agile scrum group)](https://agilescrumgroup.nl/wat-is-een-user-story/)
-- [User stories @ Atlassian](https://www.atlassian.com/nl/agile/project-management/user-stories)
+- [User stories @ Atlassian](https://www.atlassian.com/nl/agile/project-management/user-stories) -->
 
 ### Planning Poker
 
 Na het schrijven van de user stories is het tijd om gezamelijk in te schatten hoeveel werk er in elke elke user story gaat zitten. Inschattingen in tijd zijn over het algemeen heel lastig. Hier heeft de Scrum methodiek een oplossing voor namelijk planning poker. 
 
-Planning poker is een tool om gezamelijk het werk in te schatten. Je gebruikt hiervoor de Fibonacci reeks. 
+Planning poker is een tool om gezamelijk het werk op basis van complexiteit in inspanning in te schatten. Je gebruikt hiervoor de Fibonacci reeks. 
 
-**🛠️ Opdracht**:  
-1. Zoek uit wat de Fibonacci reeks is en schrijf deze op het bord
-2. Zoek uit wat de stappen van planning poker zijn en schrijf ze op het bord
-3. Doe een ronde planning poker op de user stories, schrijf de inschatting op de stickies
+**🛠️ Opdracht 3**:  
+1. Doe de planning poker op alle taken in je projectboard
+
+_💡 ProTip: begin met een story die gemakkelijk consensus bereikt op bijv een 3, ook wel een ijkpunt. Zodat je elke story daarvandaan kan inschatten. Is het meer werk of minder werk dan het ijkpunt._
 
 #### Extra bronnen
 - [Online planning poker tool)](https://planningpokeronline.com/)  
@@ -65,11 +72,28 @@ Met MoSCoW bepaal je welke user stories belangrijker zijn dan andere:
 #### Extra bronnen
 - [MoSCoW uitleg (Atlassian)](https://www.atlassian.com/agile/project-management/moscow-prioritization)
 
+### Planning
+
+Een goede planning kan zorgen voor rust en zekerheid dat je een deadline kan halen. Een paar tips voor een goede planning:
+
+1. Zorg ervoor dat de planning compleet is, alles moet erin
+2. Een flexibele planning, er is ruimte voor verandering nodig
+3. Is het een realistische planning? Stel je zelf de vraag kan ik dit?
+4. Is jouw planning overzichtelijk voor jou. Welke vorm werkt het beste voor jou?
+
+#### Extra bronnen
+- [Pomodoro techniek](https://www.todoist.com/nl/productivity-methods/pomodoro-technique)
+- [Time tracker](https://toggl.com/)
+- [Todoist](https://www.todoist.com/nl)
+- [Notion](https://www.notion.com/)
+
 ### 💪 Extra uitdagingen
 - Vergelijk jullie eigen inschattingen met een ander team: waar verschillen jullie en waarom?  
-- Analyseer achteraf: hoeveel stories bleken lastiger of makkelijker dan je dacht?  
+- Analyseer achteraf: hoeveel stories bleken lastiger of makkelijker dan je dacht?
 
 ### Leervragen
+
+Zet de antwoorden in je learning journal.
 
 1. Hoe helpt het schrijven van user stories je om vanuit de gebruiker te denken?  
 2. Hoe werkte planning poker in jullie team: was er discussie, en wat leer je daarvan?  
