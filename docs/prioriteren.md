@@ -24,11 +24,13 @@ Dit verdelen we in drie onderwerpen:
 
 ### Epics & User Stories
 
-Epics zijn een handige manier om werk te organiseren en een hiërarchie te creëren. Het idee is om werk op te splitsen in opleverbare stukken, zodat grote projecten kunnen worden afgerond en klanten op regelmatige basis waarde krijgen. Epics helpen teams werk op te splitsen terwijl ze naar een groter doel toewerken.
+Epics zijn een handige manier om werk te organiseren en een hiërarchie te creëren. Het idee is om werk op te splitsen in opleverbare stukken, zodat grote projecten kunnen worden afgerond en opdrachtgevers op regelmatige basis waarde krijgen. Epics helpen teams werk op te splitsen terwijl ze naar een groter doel toewerken.
 
-Epics zijn dus grote stukken werk die kunnen worden opgesplitst in kleinere taken, die vervolgens in sprints kunnen worden voltooid. Dit helpt teams om gefocust te blijven en om regelmatig waarde te leveren aan hun klanten.
+Epics zijn dus grote stukken werk die kunnen worden opgesplitst in kleinere taken, die vervolgens in sprints kunnen worden voltooid. Dit helpt teams om gefocust te blijven en om regelmatig waarde te leveren aan hun opdrachtgevers.
 
 User stories helpen je om de wensen en behoeftes van je gebruiker concreet te maken. Ze bestaan vaak uit een korte zin in de vorm van: Als [type gebruiker] wil ik [actie] zodat [toegevoegde waarde].  
+
+Taken kun je zien als todo’s die ervoor zorgen dat een user story klaar is. Taken voegen op zichzelf geen waarde toe. Zijn alle taken van een user story gedaan dan heb je waarde toegevoegd voor je opdrachtgever/project. 
 
 **🛠️ Opdracht 1 - 15 minuten**:
 1. Zoek met je team online naar voorbeelden van epics, schrijf er 1 op het bord
@@ -36,7 +38,7 @@ User stories helpen je om de wensen en behoeftes van je gebruiker concreet te ma
 3. Bepaal welk type gebruiker jullie site gaat gebruiken
 
 **🛠️ Opdracht 2 - 30 minuten**:
-1. Maak in retrospect een ‘epic’, user stories, en taken voor jullie squadpage
+1. Maak in retrospect een ‘epic’ en user stories voor jullie squadpage
 
 <!-- #### Extra bronnen
 - [User stories @ Agile scrum group)](https://agilescrumgroup.nl/wat-is-een-user-story/)
@@ -83,6 +85,7 @@ Een goede planning kan zorgen voor rust en zekerheid dat je een deadline kan hal
 
 #### Extra bronnen
 - [Pomodoro techniek](https://www.todoist.com/nl/productivity-methods/pomodoro-technique)
+- [Getting things done](https://gettingthingsdone.com/)
 - [Time tracker](https://toggl.com/)
 - [Todoist](https://www.todoist.com/nl)
 - [Notion](https://www.notion.com/)
