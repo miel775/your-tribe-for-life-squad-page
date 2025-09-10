@@ -1,4 +1,4 @@
 <h1>FDND</h1>
 
 <!-- homepage -->
- <a href="/squad"> Klik om te beginnen</a>
+ <a href="/members"> Klik om te beginnen</a>
