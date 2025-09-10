@@ -58,11 +58,13 @@ Normaal gesproken doe je planning poker sessies op user stories, dus je schat de
 _💡 ProTip: begin met een story die gemakkelijk consensus bereikt op bijv een 3, ook wel een ijkpunt. Zodat je elke story daarvandaan kan inschatten. Is het meer werk of minder werk dan het ijkpunt._
 
 #### Extra bronnen
+- [Planning poker uitleg @ scrumacademy](https://scrumacademy.nl/blog/planning-poker-met-je-scrum-team/)
 - [Online planning poker tool)](https://planningpokeronline.com/)  
 
 ### MoSCoW Prioriteren
 
-Met MoSCoW bepaal je welke user stories belangrijker zijn dan andere:  
+Met MoSCoW bepaal je welke user stories of taken belangrijker zijn dan andere:  
+
 - **Must have**  
 - **Should have**  
 - **Could have**  
