@@ -38,7 +38,7 @@ Taken kun je zien als todo’s die ervoor zorgen dat een user story klaar is. Ta
 3. Bepaal welk type gebruiker jullie site gaat gebruiken
 
 **🛠️ Opdracht 2 - 30 minuten**:
-1. Maak in retrospect een ‘epic’ en user stories voor jullie squadpage
+1. Maak in retrospect (dit betekent achteraf) een ‘epic’ en user stories voor jullie squadpage
 
 <!-- #### Extra bronnen
 - [User stories @ Agile scrum group)](https://agilescrumgroup.nl/wat-is-een-user-story/)
