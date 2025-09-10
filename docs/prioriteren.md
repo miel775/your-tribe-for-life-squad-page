@@ -50,6 +50,8 @@ Na het schrijven van de user stories is het tijd om gezamelijk in te schatten ho
 
 Planning poker is een tool om gezamelijk het werk op basis van complexiteit in inspanning in te schatten. Je gebruikt hiervoor de Fibonacci reeks. 
 
+Normaal gesproken doe je planning poker sessies op user stories, dus je schat de hoeveelheid werk in van een hele story. Omdat we nu midden in de sprint zitten gaan we de taken pokerplannen.
+
 **🛠️ Opdracht 3**:  
 1. Doe de planning poker op alle taken in je projectboard
 
