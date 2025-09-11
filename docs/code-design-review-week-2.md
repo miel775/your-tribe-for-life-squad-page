@@ -2,19 +2,21 @@
 
 ## Code/Design review - Week 2
 
-Geef en ontvang feedback op de code en het design van de leertaken voor de squadpage en het visitekaartje.
+Geef en ontvang feedback op de code en het desig van de squadpage en het visitekaartje.
 
-Deze week heb je met je groep verder gewerkt aan de squadpage en heb je individueel aan je visitekaartje gewerkt. Vandaag voer je in duo's een code/design review uit op de squadpagina van een ander team én het visitekaartje van jouw reviewpartner van vandaag. 
+Deze week heb je met je team verder gewerkt aan de squadpage en heb je individueel aan je visitekaartje gewerkt. Vandaag voer je in duo's een code/design review uit op de squadpagina van een ander team én het visitekaartje van één peer. 
 
 ### Werkwijze
-In een tweetal ga je de squadpage van een ander team reviewen én de visitekaartjes van elkaar. De squadpage ga je samen reviewen. De visitekaartjes doe je individueel. 
+In een tweetal ga je de squadpage van een ander team reviewen én de visitekaartjes van elkaar. De squadpage ga je samen reviewen. Het visitekaartje review je individueel. 
 
 #### Squadpage code en design review
-Kies als duo welke squadpage jullie willen gaan reviewen. Dit is een squadpage die door geen jullie beiden is gemaakt. Probeer de installatie te runnen op je eigen computer en kijk of je de applicatie draaiende kan krijgen. Staat in de Readme hoe je de code-base moet installeren en gebruiken?
+Kies als duo welke squadpage jullie willen gaan reviewen. Dit is een squadpage die door geen jullie beide is gemaakt. 
 
-Neem allereerst een kwartiertje de tijd om de repo door te lopen en bepaal samen wat je een interessant stukje code vind. Wat vind je daar bijzonder aan? Hier komen we later op terug tijdens de check-out. 
+Start de review door de installatie lokaal te runnen en kijk of je de applicatie draaiende kan krijgen. Staat er in de Readme hoe je de code-base moet installeren en gebruiken? Maak waar nodig een issue aan.
 
-Bekijk of er code conventies zijn opgenomen en loop met elkaar de conventies door. Wat valt jullie op? Is dit herkenbaar met hoe jullie dit zelf ook hebben gedaan? Wat kunnen jullie meenemen voor je eigen samenwerking?
+Neem vervolgs een kwartiertje de tijd om de repo door te lopen en bepaal samen wat jullie een interessant stukje code vinden. Wat vind je daar bijzonder aan?  
+
+Bekijk of er code conventies zijn opgenomen en loop met elkaar de conventies door. Wat valt je op? Is dit herkenbaar met hoe je dit zelf ook hebt gedaan binnen jouw? Wat kunnen je meenemen voor je eigen samenwerking?
 
 Review de website vervolgens op basis van de onderstaande criteria voor RAPPE websites. Schiet waar nodig een duidelijk omschreven issue in. Let daarbij op een goede titel, duidelijke omschrijving van de verbetering en voeg waar nodig een code voorbeeld of een bron toe:
 - **R**esponsive: is de website mobile-first opgebouwd? Is het responsive? Hier mag zowel feedback opgegeven worden vanuit design als development.
@@ -22,10 +24,10 @@ Review de website vervolgens op basis van de onderstaande criteria voor RAPPE we
 - **P**erforming: voer verschillende testen uit voor de performance.
 - **P**rogressive **E**nhanced: zijn de verschillende componenten op de pagina Progressive Enhanced opgebouwd?
 
-Tenslotte voer je een design review uit. Maandag hebben jullie een workshop gehad over creative coding. Bekijk of en hoe er animatie zijn toegevoegd aan de pagina. Beantwoord onderstaande vragen en schiet een issue in met feedback hoe dit eventueel beter zou kunnen: Sluiten de animaties aan bij elkaar? Voelt het als één geheel (motion language)? Versterken de animaties de interactie of maken ze het juist verwarrend? Zijn er verrassende of creatieve keuzes die de ervaring leuker maken?
+Tenslotte voer je een design review uit. Maandag hebben jullie een workshop gehad over creative coding. Bekijk of en hoe er animaties zijn toegevoegd aan de pagina. Beantwoord onderstaande vragen en schiet een issue in met feedback hoe dit eventueel beter zou kunnen: Sluiten de animaties aan bij elkaar? Voelt het als één geheel (motion language)? Versterken de animaties de interactie of maken ze het juist verwarrend? Zijn er verrassende of creatieve keuzes die de ervaring leuker maken?
 
 #### Visitekaartje review
-Review binnen jouw duo elkaars visitekaartje. Ga daarbij langs de stappen die hierboven ook zijn beschreven voor de squadpage. 
+Review binnen jouw duo elkaars visitekaartje. Ga daarbij langs alle stappen die hierboven ook  beschreven voor de squadpage. 
 
 ### Checkout
 - Laat één of meer voorbeelden zien waar jij feedback hebt gegeven op een stukje code van iemand anders.
