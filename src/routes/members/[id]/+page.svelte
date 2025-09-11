@@ -35,6 +35,7 @@
         aspect-ratio: 3/4;
         object-fit: cover;
         border-radius: .5em;
+        border: .3em solid #670f0f;
     }
 
     .book {
@@ -42,6 +43,7 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
     .page {
         border: 6px solid rgb(52, 20, 6);
         border-radius: 1em;
@@ -51,12 +53,17 @@
     }
 
     @media (min-width: 720px) {
+        main {
+        perspective: 1000px;
+        }
         .book {
             grid-template-columns: 1fr 1fr;
              width: min(1000px, 95vw);
              position: relative;
+             transform-style: preserve-3d;
         }
-         .book::before {
+        /* book cover */
+        .book::before {
         content: "";
         position: absolute;
         top: 0;
@@ -66,6 +73,19 @@
         width: 12px;
         background: linear-gradient(#8a5e29, #4b361f);
         border-radius: .5em;
-    }
+        }
+        /* 3d effect book tilt */
+        .left {
+        transform: rotateY(-3deg);
+        }
+        .right {
+        transform: rotateY(3deg);
+        }
+        .book:hover .left {
+        transform: rotateY(-10deg);
+        }
+        .book:hover .right {
+        transform: rotateY(10deg);
+        }
 }
 </style>
