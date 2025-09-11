@@ -61,6 +61,20 @@
              width: min(1000px, 95vw);
              position: relative;
              transform-style: preserve-3d;
+             animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
         }
         /* book cover */
         .book::before {
