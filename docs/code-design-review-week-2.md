@@ -10,7 +10,7 @@ Deze week heb je met je groep verder gewerkt aan de squadpage en heb je individu
 In een tweetal ga je de squadpage van een ander team reviewen én de visitekaartjes van elkaar. De squadpage ga je samen reviewen. De visitekaartjes doe je individueel. 
 
 #### Squadpage code en design review
-Kies als duo welke squadpage jullie willen gaan reviewen. Dit is een squadpage die door geen jullie beiden is gemaakt. Probeer de installatie te runnen op je eigen computer en kijk of je de applicatie draaiende kan krijgen. 
+Kies als duo welke squadpage jullie willen gaan reviewen. Dit is een squadpage die door geen jullie beiden is gemaakt. Probeer de installatie te runnen op je eigen computer en kijk of je de applicatie draaiende kan krijgen. Staat in de Readme hoe je de code-base moet installeren en gebruiken?
 
 Neem allereerst een kwartiertje de tijd om de repo door te lopen en bepaal samen wat je een interessant stukje code vind. Wat vind je daar bijzonder aan? Hier komen we later op terug tijdens de check-out. 
 
