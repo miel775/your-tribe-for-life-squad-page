@@ -28,7 +28,7 @@ Tenslotte voer je een design review uit. Maandag hebben jullie een workshop geha
 Review binnen jouw duo elkaars visitekaartje. Ga daarbij langs de stappen die hierboven ook zijn beschreven voor de squadpage. 
 
 ### Checkout
+- Laat één of meer voorbeelden zien waar jij feedback hebt gegeven op een stukje code van iemand anders.
+- Laat één of meer voorbeelden zien waar jij feedback hebt gegeven op het design van iemand anders. 
 
-Zet de antwoorden in je learning journal.
-
-<!-- Een drietal vragen die ze kunnen opnemen in hun learning journal, waar de squadleaders dan weer op terug komen op vrijdag. -->
+Voeg bewijslast toe en noem dit: S13: Code & Design Review W2
