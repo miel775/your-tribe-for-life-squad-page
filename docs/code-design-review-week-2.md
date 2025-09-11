@@ -34,7 +34,7 @@ Je werkt in een duo:
    - **R – Responsive**: is de website mobile-first en goed schaalbaar? (feedback vanuit design én development).  
    - **A – Accessible**: is de site toegankelijk (toetsenbord, screenreader)? Voer tests uit en kijk ook in de code.  
    - **P – Performing**: test de performance met verschillende tools.  
-   - **PE – Progressive Enhanced**: zijn de componenten robuust opgebouwd, zodat de site ook werkt met beperkte ondersteuning?  
+   - **PE – Progressive Enhanced**: zijn de componenten PE opgebouwd, zodat de site in verschillende contexten te gebruiken is?  
 
 5. **Design review**  
    - Reflecteer op de animaties (na de workshop Creative Coding).  
