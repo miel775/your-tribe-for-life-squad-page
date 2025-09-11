@@ -4,12 +4,12 @@
   const members = data.members;
 </script>
 
-<h1>Overzichtspagina</h1>
+<h1>Squadpage</h1>
 <div class="student-flag"></div>
 
 <!-- Hier itereer ik met een loop door alle members heen -->
 <section class="book">
-  <h2 class="book-title">Squadpage</h2>
+  <h2 class="book-title">Squad 2F</h2>
   {#each members as member}
     <ul class="students">
       <li class="student">
@@ -19,14 +19,65 @@
           alt="Avatar van {member.name}"
         />
         <a href={`/members/${member.id}`}>
-            <h3 class="student-title">{member.name}</h3>  </a>
+          <h3 class="student-title">{member.name}</h3>
+        </a>
       </li>
     </ul>
   {/each}
 </section>
 
 <style>
+  :root {
+    --text-color: black;
+    --book-background:beige;
+    --border-color: 1px solid black;
+    --book-side: black;
+  }
 
+  .book {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+    max-width: 900px;
+    /* height: 300px; */
+    border: 1px solid black;
+    background: beige;
+    border-top-right-radius: 2% 15%;
+    border-bottom-right-radius: 2% 15%;
+    border-left: 1rem solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    /* height: 100vw; */
+    /* border-top-left-radius: 20%; */
+    /* border-left: 10px solid black; */
+  }
 
+  .book-title {
+    /* align-self: center; */
+    text-align: right;
+    margin: 1em 1em;
+  }
+
+  .students {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .students a {
+    text-decoration: none;
+  }
+
+  .student {
+    list-style-type: none;
+  }
+
+  .student-img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+  }
 
 </style>
