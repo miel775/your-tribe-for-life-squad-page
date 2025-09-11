@@ -45,14 +45,27 @@
     .page {
         border: 6px solid rgb(52, 20, 6);
         border-radius: 1em;
-        background-color: white;
+        background: repeating-linear-gradient(0deg, transparent 0 22px, rgba(0, 0, 0, 0.262) 22px 23px),beige;
         padding: 1em;
+         box-shadow: 0 0 0 6px #5a432a, inset 0 0 0 2px #1e140a;
     }
 
     @media (min-width: 720px) {
         .book {
             grid-template-columns: 1fr 1fr;
              width: min(1000px, 95vw);
+             position: relative;
         }
+         .book::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 12px;
+        background: linear-gradient(#8a5e29, #4b361f);
+        border-radius: .5em;
     }
+}
 </style>
