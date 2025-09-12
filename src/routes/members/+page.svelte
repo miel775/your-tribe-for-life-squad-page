@@ -10,8 +10,8 @@
 <!-- Hier itereer ik met een loop door alle members heen -->
 <section class="book">
   <h2 class="book-title">Squad 2F</h2>
-  {#each members as member}
     <ul class="students">
+        {#each members as member}
       <li class="student">
         <img
           src={member.avatar}
@@ -22,8 +22,8 @@
           <h3 class="student-title">{member.name}</h3>
         </a>
       </li>
-    </ul>
   {/each}
+</ul>
 </section>
 
 <style>
@@ -64,6 +64,7 @@
   .students {
     display: flex;
     flex-wrap: wrap;
+    gap: 1em;
   }
 
   .students a {
