@@ -48,10 +48,3 @@ Je werkt in een duo:
 
 - Review elkaars visitekaartje binnen je duo.  
 - Volg daarbij dezelfde stappen als hierboven (installatie, code, RAPPE, design).  
-
-
-### Checkout
-- Laat één of meer voorbeelden zien waar jij feedback hebt **gegeven** op een stukje **code** van iemand anders.
-- Laat één of meer voorbeelden zien waar jij feedback hebt **gegeven** op het **design** van iemand anders. 
-
-Voeg bewijslast toe en noem dit: **S13: Code/Design Review W2** en voeg een korte STARR reflectie toe in de evidence description.
