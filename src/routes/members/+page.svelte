@@ -10,8 +10,8 @@
 <!-- Hier itereer ik met een loop door alle members heen -->
 <section class="book">
   <h2 class="book-title">Squad 2F</h2>
-    <ul class="students">
-        {#each members as member}
+  <ul class="students">
+    {#each members as member}
       <li class="student">
         <img
           src={member.avatar}
@@ -22,39 +22,58 @@
           <h3 class="student-title">{member.name}</h3>
         </a>
       </li>
-  {/each}
-</ul>
+    {/each}
+  </ul>
 </section>
 
 <style>
   :root {
     --text-color: black;
-    --book-background:beige;
+    --book-background: beige;
     --border-color: 1px solid black;
     --book-side: black;
   }
 
   .book {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    /* flex-direction: row; */
+    flex-direction: column;
+    /* flex-wrap: wrap;
+    /* justify-content: flex-start; */
     align-items: flex-start;
-    width:100%;
-    max-width: 900px;
+    /* width:100%;  */
+    max-width: 1200px;
+    /* max-width: 900px; */
     /* height: 300px; */
     border: 1px solid black;
     background: beige;
-    border-top-right-radius: 2% 15%;
-    border-bottom-right-radius: 2% 15%;
+    /* border-top-right-radius: 2% 15%;
+    border-bottom-right-radius: 2% 15%; */
     border-left: 1rem solid black;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     /* height: 100vw; */
     /* border-top-left-radius: 20%; */
     /* border-left: 10px solid black; */
+    position: relative;
   }
 
+  .book::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: black;
+    display: none;
+  }
+
+  @media (min-width: 800px) {
+    .book::before {
+      display: block;
+    }
+  }
   .book-title {
     /* align-self: center; */
     text-align: right;
@@ -64,15 +83,31 @@
   .students {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 0 50px;
   }
+
+  /* .students {
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px 40px;
+  } */
 
   .students a {
     text-decoration: none;
   }
 
   .student {
+    /* width: 200px; */
+    /* width: 45%; */
+    /* width: 30%; */
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style-type: none;
+    gap: 1em;
   }
 
   .student-img {
@@ -80,5 +115,4 @@
     width: 200px;
     height: 200px;
   }
-
 </style>
