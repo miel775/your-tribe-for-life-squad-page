@@ -13,11 +13,12 @@
   <ul class="students">
     {#each members as member}
       <li class="student">
-        <img
+        <!-- <img
           src={member.avatar}
           class="student-img"
           alt="Avatar van {member.name}"
-        />
+        /> -->
+        <img src={`https://fdnd.directus.app/assets/${member.mugshot}`} alt={member.name} class="student-img"/>
         <a href={`/members/${member.id}`}>
           <h3 class="student-title">{member.name}</h3>
         </a>
@@ -27,11 +28,19 @@
 </section>
 
 <style>
-  :root {
+  /* :root {
     --text-color: black;
     --book-background: beige;
     --border-color: 1px solid black;
     --book-side: black;
+  } */
+
+  :root {
+    --paper: #e8dcc0;
+    --ink: #2a1c0f;
+    --edge: #2f2213;
+    --accent: #5d1212;
+    --primary-bg-color:#2F2506;
   }
 
   .book {
@@ -45,11 +54,11 @@
     max-width: 1200px;
     /* max-width: 900px; */
     /* height: 300px; */
-    border: 1px solid black;
-    background: beige;
+    border: 1px solid var(--edge);
+    background: var(--paper);
     /* border-top-right-radius: 2% 15%;
     border-bottom-right-radius: 2% 15%; */
-    border-left: 1rem solid black;
+    border-left: 1rem solid var(--edge);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     /* height: 100vw; */
