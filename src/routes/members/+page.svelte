@@ -28,12 +28,6 @@
 </section>
 
 <style>
-  /* :root {
-    --text-color: black;
-    --book-background: beige;
-    --border-color: 1px solid black;
-    --book-side: black;
-  } */
 
   :root {
     --paper: #e8dcc0;
@@ -77,12 +71,13 @@
     background: black;
     display: none;
   }
-
+  
   @media (min-width: 800px) {
     .book::before {
       display: block;
     }
   }
+
   .book-title {
     /* align-self: center; */
     text-align: right;
