@@ -1,5 +1,5 @@
 
- <p class="home-click" href="/squad"> Klik op de school om te beginnen</p>
+ <p class="home-click" href="/squad-overview"> Klik op de school om te beginnen</p>
 
   <!-- Cloud 1 -->
 <svg class="cloud 1" id="cloud-1" data-name="Cloud-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
@@ -56,7 +56,7 @@
 </defs>
 </svg>
 
-<a href="/squad" class="schoolbuilding-all">
+<a href="/squad-overview" class="schoolbuilding-all">
         <svg class="schoolbuilding" id="school-building" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1024">
     <defs>
         <style>
