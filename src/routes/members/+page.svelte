@@ -4,12 +4,12 @@
   const members = data.members;
 </script>
 
-<h1>Squadpage</h1>
+<h1 class="squadpage-title">Squad 2F</h1>
 <div class="student-flag"></div>
 
 <!-- Hier itereer ik met een loop door alle members heen -->
 <section class="book">
-  <h2 class="book-title">Squad 2F</h2>
+  <!-- <h2 class="book-title">Squad 2F</h2> -->
   <ul class="students">
     {#each members as member}
       <li class="student">
@@ -34,7 +34,13 @@
     --ink: #2a1c0f;
     --edge: #2f2213;
     --accent: #5d1212;
+    --book-border: #5D3027;
+    --side-border: #C0B09D;
     --primary-bg-color:#2F2506;
+  }
+
+  .squadpage-title {
+   text-align: center;
   }
 
   .book {
@@ -48,17 +54,20 @@
     max-width: 1200px;
     /* max-width: 900px; */
     /* height: 300px; */
-    border: 1px solid var(--edge);
+    border: 8px solid var(--edge);
     background: var(--paper);
-    /* border-top-right-radius: 2% 15%;
-    border-bottom-right-radius: 2% 15%; */
-    border-left: 1rem solid var(--edge);
+    border-radius: 2px;
+    /* border-top-right-radius: 120px 40px; */
+    /* border-bottom-right-radius: 2% 15%;  */
+    /* border-left: 1rem solid var(--side-border);
+    border-top: 1rem solid var(--book-border); */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     /* height: 100vw; */
     /* border-top-left-radius: 20%; */
     /* border-left: 10px solid black; */
     position: relative;
+    padding-top: 3em;
   }
 
   .book::before {
@@ -71,7 +80,7 @@
     background: black;
     display: none;
   }
-  
+
   @media (min-width: 800px) {
     .book::before {
       display: block;
@@ -79,16 +88,17 @@
   }
 
   .book-title {
-    /* align-self: center; */
-    text-align: right;
-    margin: 1em 1em;
+    align-self: flex-end;
+    margin: 1em ;
   }
 
   .students {
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     gap: 20px;
     justify-content: flex-start;
+    /* align-items: center; */
     padding: 0 50px;
   }
 
@@ -114,9 +124,20 @@
     gap: 1em;
   }
 
+  @media (max-width: 500px) {
+  .student {
+    width: 100%;
+  }
+
+
+  }
+
+
   .student-img {
     object-fit: cover;
     width: 200px;
     height: 200px;
+    /* border:  5px solid var(--book-border);
+    border-radius: 2px; */
   }
 </style>
