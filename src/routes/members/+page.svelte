@@ -18,7 +18,11 @@
           class="student-img"
           alt="Avatar van {member.name}"
         /> -->
-        <img src={`https://fdnd.directus.app/assets/${member.mugshot}`} alt={member.name} class="student-img"/>
+        <img
+          src={`https://fdnd.directus.app/assets/${member.mugshot}`}
+          alt={member.name}
+          class="student-img"
+        />
         <a href={`/members/${member.id}`}>
           <h3 class="student-title">{member.name}</h3>
         </a>
@@ -28,46 +32,62 @@
 </section>
 
 <style>
-
   :root {
     --paper: #e8dcc0;
     --ink: #2a1c0f;
     --edge: #2f2213;
     --accent: #5d1212;
-    --book-border: #5D3027;
-    --side-border: #C0B09D;
-    --primary-bg-color:#2F2506;
+    --book-border: #5d3027;
+    --side-border: #c0b09d;
+    --primary-bg-color: #2f2506;
+  }
+
+  .flag-wrapper {
+
   }
 
   .squad-title {
-   text-align: center;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+
+  .student-flag {
+    position: relative;
+    background: red;
+    height: 300px;
+    margin-top: 5px;
+    margin-left: 20px;
+    transform: translateY(-30px);
+    width: 100px;
+    z-index: 2;
+  }
+
+  .student-flag::before {
+    border-top: 35px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    bottom: -35px;
+    width: 0px;
   }
 
   .book {
     display: flex;
-    /* flex-direction: row; */
     flex-direction: column;
-    /* flex-wrap: wrap;
-    /* justify-content: flex-start; */
     align-items: flex-start;
-    /* width:100%;  */
     max-width: 1200px;
-    /* max-width: 900px; */
-    /* height: 300px; */
     border: 8px solid var(--edge);
     background: var(--paper);
     border-radius: 2px;
-    /* border-top-right-radius: 120px 40px; */
-    /* border-bottom-right-radius: 2% 15%;  */
-    /* border-left: 1rem solid var(--side-border);
-    border-top: 1rem solid var(--book-border); */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    /* height: 100vw; */
-    /* border-top-left-radius: 20%; */
-    /* border-left: 10px solid black; */
-    position: relative;
+    /* position: relative; */
     padding-top: 3em;
+    z-index: 1;
   }
 
   .book::before {
@@ -89,33 +109,24 @@
 
   .book-title {
     align-self: flex-end;
-    margin: 1em ;
+    margin: 1em;
   }
 
   .students {
     display: flex;
-    /* flex-direction: column; */
+
     flex-wrap: wrap;
     gap: 20px;
     justify-content: flex-start;
-    /* align-items: center; */
+
     padding: 0 50px;
   }
-
-  /* .students {
-    display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 20px 40px;
-  } */
 
   .students a {
     text-decoration: none;
   }
 
   .student {
-    /* width: 200px; */
-    /* width: 45%; */
-    /* width: 30%; */
     width: calc(50% - 20px);
     display: flex;
     flex-direction: column;
@@ -125,19 +136,14 @@
   }
 
   @media (max-width: 500px) {
-  .student {
-    width: 100%;
+    .student {
+      width: 100%;
+    }
   }
-
-
-  }
-
 
   .student-img {
     object-fit: cover;
     width: 200px;
     height: 200px;
-    /* border:  5px solid var(--book-border);
-    border-radius: 2px; */
   }
 </style>
