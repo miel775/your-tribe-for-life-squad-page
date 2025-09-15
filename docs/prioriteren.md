@@ -98,7 +98,7 @@ Een goede planning kan zorgen voor rust en zekerheid dat je een deadline kan hal
 - Vergelijk jullie eigen inschattingen met een ander team: waar verschillen jullie en waarom?  
 - Analyseer achteraf: hoeveel stories bleken lastiger of makkelijker dan je dacht?
 
-### Leervragen
+### ✒️ Leervragen
 
 Zet de antwoorden in je learning journal.
 

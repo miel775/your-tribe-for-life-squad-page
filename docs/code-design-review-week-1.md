@@ -89,7 +89,7 @@ Feedback gaat niet over persoonlijke smaak — het draait er niet om of je een w
 - Usable — Is het gemakkelijk te gebruiken?
 - Pleasurable — Is het plezierig?
 
-### Leervragen
+### ✒️ Leervragen
 
 Zet de antwoorden in je learning journal.
 

@@ -48,7 +48,7 @@ Door componenten te gebruiken zorg je ervoor dat je jezelf niet hoeft te herhale
 ##### Extra bronnen
 Werk eventueel eerst de [Sveltekit tutorial over componenten @ svelte.dev](https://svelte.dev/tutorial/svelte/your-first-component) door voor je bovenstaande opdrachten uitvoert.
 
-### Leervragen
+### ✒️ Leervragen
 
 Zet de antwoorden in je learning journal.
 1. Wat zijn sveltekit layouts en hoe kan je die toepassen in een web project?

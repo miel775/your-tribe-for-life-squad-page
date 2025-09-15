@@ -21,7 +21,7 @@ Geef en ontvang feedback op de code en het design van je squadpage en je visitek
  Dit is optioneel voor de hardlopers die iets extra's willen. 
 -->
 
-### Leervragen
+### ✒️ Leervragen
 
 Zet de antwoorden in je learning journal.
 
