@@ -14,7 +14,7 @@
         </article>
 
         <article class="page right">
-            <h2>{member.name}</h2>
+            <h2 class="type">{member.name}</h2>
             <p>{member.bio}</p>
             <a href="/members">Terug naar overzicht</a>
         </article>
@@ -101,5 +101,21 @@
         .book:hover .right {
         transform: rotateY(10deg);
         }
+        /* typewriter effect */
+        .type {
+        white-space: nowrap;
+        width: 0;
+        overflow: hidden;
+        border-right: 2px solid currentColor;
+        animation: typing 3.4s steps(28,end) forwards, caret .8s step-end infinite;
+        }
+
+        @keyframes typing {
+        to { width: 100% } 
+        }
+
+        @keyframes caret {
+        50% { border-color: transparent } 
+    }
 }
 </style>
