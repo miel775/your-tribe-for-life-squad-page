@@ -28,6 +28,21 @@
     background-color: rgb(255, 255, 255);
     padding: 2rem;
     min-height: 100vh;
+    background-image:
+    radial-gradient(circle at center, rgba(255,255,200,0.8) 0%, transparent 30%),
+    radial-gradient(circle at center, rgba(255,255,255,0.6) 0%, transparent 25%),
+    radial-gradient(circle at center, rgba(246, 240, 70, 0.7) 0%, transparent 30%),
+    radial-gradient(circle at center, rgba(227, 209, 12, 0.7) 0%, transparent 30%),
+    radial-gradient(circle at center, rgba(241, 240, 227, 0.7) 0%, transparent 30%);
+    background-repeat: no-repeat;
+    background-size: 400px 400px, 350px 350px, 500px 500px, 450px 450px;
+    animation: sparkles 15s linear infinite;
+    background-color: #110c1e;
+    }
+
+    @keyframes sparkles {
+        from { background-position: 0% 0%, 100% 100%, 50% 200%, -100% 50%; }
+        to   { background-position: 100% 50%, 0% 100%, 200% 0%, 50% -100%; }
     }
 
     img {
