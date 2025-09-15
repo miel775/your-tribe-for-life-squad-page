@@ -4,7 +4,7 @@
   const members = data.members;
 </script>
 
-<h1 class="squadpage-title">Squad 2F</h1>
+<h1 class="squad-title">Squad 2F</h1>
 <div class="student-flag"></div>
 
 <!-- Hier itereer ik met een loop door alle members heen -->
@@ -39,7 +39,7 @@
     --primary-bg-color:#2F2506;
   }
 
-  .squadpage-title {
+  .squad-title {
    text-align: center;
   }
 
