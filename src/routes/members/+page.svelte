@@ -10,6 +10,8 @@
 </section>
 
 <!-- Hier itereer ik met een loop door alle members heen -->
+<div class="book-wrapper">
+<div class="book-background"></div>
 <section class="book">
   <!-- <h2 class="book-title">Squad 2F</h2> -->
   <ul class="students">
@@ -54,9 +56,14 @@
   }
 
   .squad-title {
-    position: relative;
+    /* position: relative; */
     text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 35%; 
+    /* transform: translateY(-50%); */
     z-index: 3;
+    margin: 20px;
 }
 
   .student-flag {
@@ -82,28 +89,58 @@
     left: 0;
     position: absolute;
     bottom: -35px;
-    width: 0px;
+    /* width: 0px; */
+  }
+
+  .book-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+
+  .book-background {
+    position: absolute;
+    /* display: block; */
+    top:0px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    /* width: 100%;
+    height: 100vh; */
+    background: var(--book-border);
+    border: 10px solid black;
+    border-radius: 20px;
+    z-index: 1 ;
+
   }
 
   .book {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    /* justify-content: center;
+    align-items: center; */
     max-width: 1200px;
     border: 8px solid var(--edge);
     background: var(--paper);
     border-radius: 2px;
+    border-left: 2em solid var(--side-border);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    /* position: relative; */
-    padding-top: 3em;
-    z-index: 1;
+    padding-top: 2em;
+    position: relative;
+    /* padding-top: 3em; */
+    z-index: 2;
   }
 
   .book::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 0px;
     bottom: 0;
     left: 50%;
     width: 1px;
@@ -117,19 +154,12 @@
     }
   }
 
-  .book-title {
-    align-self: flex-end;
-    margin: 1em;
-  }
-
   .students {
     display: flex;
-
     flex-wrap: wrap;
     gap: 20px;
     justify-content: flex-start;
-
-    padding: 0 50px;
+    padding: 0;
   }
 
   .students a {
@@ -146,6 +176,11 @@
   }
 
   @media (max-width: 500px) {
+
+    .book {
+        border-left: 1em solid var(--side-border);
+    }
+
     .student {
       width: 100%;
     }
