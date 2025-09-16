@@ -4,7 +4,7 @@
 </script>
 
 <svg
-  class={className}
+  class= {className}
   id="cloud-1"
   data-name="Cloud-1"
   xmlns="http://www.w3.org/2000/svg"

@@ -1,0 +1,170 @@
+<script>
+  export let fill = "lightgrey";
+  export let className = "fog";
+</script>
+
+<div class="scene">
+  <div class={className} style="background-color: {fill};"></div>
+
+  <div class="cloud move-cloud"></div>
+
+  <div class="tree-1"></div>
+  <div class="tree-2"></div>
+
+  <div class="schoolbuilding"></div>
+
+  <div class="ground"></div>
+
+  <div class="moon"></div>
+
+  <h1 class="home-title">Welcome to the School</h1>
+  <p class="home-click">Click to Enter</p>
+
+  <div class="lightning-1"></div>
+  <div class="lightning-2"></div>
+</div>
+
+<style>
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--colour-tone-4-dark);
+}
+
+body.lightning {
+  background-color: white;
+  animation: lightning 10s infinite;
+}
+
+.cloud {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+}
+
+.cloud.move-cloud {
+  animation: moveclouds 200s linear infinite;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: var(--colour-tone-5);
+}
+
+.schoolbuilding {
+  position: absolute;
+  bottom: -500px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 1200px;   
+  height: 1200px;
+}
+
+.schoolbuilding:hover {
+  animation: upwards 5s forwards;
+}
+
+.home-title {
+  color: var(--colour-tone-2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none;
+  -webkit-text-stroke: 4px var(--colour-tone-4-dark);
+}
+
+.home-click {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 700;
+  font-size: var(--p-desktop);
+  color: var(--colour-tone-2);
+  animation: opacitychange 3s infinite;
+}
+
+.tree-1 {
+  position: absolute;
+  bottom: -400px;
+  left: 50px;
+  width: 450px;
+  height: 900px;
+  z-index: 1;
+}
+
+.tree-2 {
+  position: absolute;
+  bottom: -400px;
+  right: 50px;
+  width: 450px;
+  height: 900px;
+  z-index: 1;
+}
+
+.moon {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+.lightning-1 {
+  animation: lightning 10s infinite;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -500px;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+.lightning-2 {
+  animation: lightning 3s infinite;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: -700px;
+  filter: blur(2px);
+}
+
+@keyframes opacitychange {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes moveclouds {
+  0% { transform: translateX(-250px); }
+  100% { transform: translateX(100vw); }
+}
+
+@keyframes lightning {
+  0% { opacity: 0; }
+  4% { opacity: 0; }
+  10% { opacity: 1; }
+  15% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes upwards {
+  0% { bottom: -500px; }
+  100% { bottom: -450px; }
+}
+</style>

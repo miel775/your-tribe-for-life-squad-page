@@ -15,7 +15,6 @@
       cloud.style.top = `${Math.random() * 50}%`;
       cloud.style.scale = `${Math.random() * 1 + 0.5}`;
       cloud.style.transform = `scale(${Math.random() * 1 + 0.5})`;
-      cloud.style.zIndex = Math.floor(Math.random() * 5);
       cloud.classList.add('move-cloud');
     });
   });
@@ -31,6 +30,7 @@
 <div class=cloud> <Cloud3 /> </div>
 
 <Fog />
+
 
 <style>
   :root {
@@ -78,9 +78,58 @@
     --p-mobile: 18px;
 }
 
+:global(body) {
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 a {
     color: var(--colour-tone-2);
     text-decoration: none;
     animation: opacitychange 3s infinite;
-  }
+}
+
+.home-click {
+    color: var(--colour-tone-2);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+    -webkit-text-stroke: 1px var(--colour-tone-2-dark);
+}
+
+.cloud {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    z-index: -1;
+}
+
+/* keyframes */
+@keyframes opacitychange {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes moveclouds {
+    0% { transform: translateX(-250px); }
+    100% { transform: translateX(100vw); }
+}
+
+@keyframes lightning {
+    0% { opacity: 0; }
+    4% { opacity: 0; }
+    10% { opacity: 1; }
+    15% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes upwards {
+    0% { bottom: -500px; }
+    100% { bottom: -450px; }
+}
 </style>

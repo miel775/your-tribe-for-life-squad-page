@@ -114,26 +114,3 @@ a {
     filter: blur(2px);
 }
 
-@keyframes opacitychange {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
-}
-
-@keyframes moveclouds {
-    0% { transform: translateX(-250px); }
-    100% { transform: translateX(100vw); }
-}
-
-@keyframes lightning {
-    0% { opacity: 0; }
-    4% { opacity: 0; }
-    10% { opacity: 1; }
-    15% { opacity: 0; }
-    100% { opacity: 0; }
-}
-
-@keyframes upwards {
-    0% { bottom: -500px; }
-    100% { bottom: -450px; }
-}
