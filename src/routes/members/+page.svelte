@@ -4,6 +4,8 @@
   const members = data.members;
 </script>
 
+<section class="flag-wrapper">
+<a href="/" class="student-flag"></a>
 <h1 class="squad-title">Squad 2F</h1>
 <div class="student-flag"></div>
 
