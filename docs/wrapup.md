@@ -121,4 +121,3 @@ Zet de antwoorden in je learning journal.
 1. Hoe verschilde jouw conventies met die van de FDND Agency?
 2. Welke conventies zou je willen toevoegen aan die van de FDND Agency? Schiet ook een issue in s.v.p.
 3. Wat waren de belangrijkste punten uit de kampvuursessie?
-4. Wat neem je mee uit deze sprint dat je direct wilt toepassen in de volgende?
