@@ -65,7 +65,7 @@ Je leert hoe je met behulp van shapes, direction, easing en timing een eigen 'co
 - Pas Scroll animaties toe op je leertaak 🫶
 - Pas de animaties ook toe op de detailpagina of je visitekaartje🫸 🫷
 
-## Leervragen
+### ✒️ Leervragen
 
 Zet de antwoorden in je learning journal.
 
