@@ -7,7 +7,7 @@
 <section class="flag-wrapper">
 <a href="/" class="student-flag"></a>
 <h1 class="squad-title">Squad 2F</h1>
-<div class="student-flag"></div>
+</section>
 
 <!-- Hier itereer ik met een loop door alle members heen -->
 <section class="book">
@@ -32,6 +32,7 @@
     {/each}
   </ul>
 </section>
+</div>
 
 <style>
   :root {
@@ -42,9 +43,13 @@
     --book-border: #5d3027;
     --side-border: #c0b09d;
     --primary-bg-color: #2f2506;
+    --flag-color: #A80102;
   }
 
   .flag-wrapper {
+    margin-top: 7em;
+    padding-top: 2em;  
+    margin-bottom: 1em;
 
   }
 
@@ -55,18 +60,21 @@
 }
 
   .student-flag {
-    position: relative;
-    background: red;
-    height: 300px;
-    margin-top: 5px;
-    margin-left: 20px;
-    transform: translateY(-30px);
+    position: absolute;
+    /* display: block; */
+    background: var(--flag-color);
+    height: 200px;
+    top: 0px;
+    left: 5%;
+    /* margin-left: 20px; */
+    /* transform: translateY(0px); */
     width: 100px;
-    z-index: 2;
+    z-index: 3;
+    /* margin-top: 5em; */
   }
 
   .student-flag::before {
-    border-top: 35px solid red;
+    border-top: 35px solid var(--flag-color);
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     content: "";
