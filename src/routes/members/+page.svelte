@@ -70,6 +70,11 @@
     left: 38%;
     z-index: 3;
     margin: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .squad-title:hover {
+    transform:scale(1.2);
   }
 
   .student-flag {
@@ -80,6 +85,11 @@
     left: 5%;
     width: 100px;
     z-index: 3;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .student-flag:hover {
+    transform: scale(1.1);
   }
 
   .student-flag::before {
@@ -219,5 +229,12 @@
     object-fit: cover;
     width: 200px;
     height: 200px;
+    transition: transform 0.3s ease-in-out;
+    /* border-radius: 8px; */
+  }
+
+  .student-img:hover {
+   transform: scale(1.1);
+   
   }
 </style>
