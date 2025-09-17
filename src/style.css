@@ -25,6 +25,8 @@
     --colour-tone-5-light: #A2A2A2;
     --colour-tone-5-dark: #2B2B2B;
 
+    --border-desktop: 2px solid black;
+
     /* font-sizes */
     --h1-desktop: 96px;
     --h1-tablet: 72px;
