@@ -21,7 +21,6 @@
 <div class="book-wrapper">
   <div class="book-background"></div>
   <section class="book">
-    <!-- <h2 class="book-title">Squad 2F</h2> -->
     {#each chunks as slide}
       <ul class="students">
         {#each slide as member}
@@ -36,7 +35,7 @@
               alt={member.name}
               class="student-img"
             />
-            <a href={`/members/${member.id}`}>
+            <a href={`/members/${member.id}`} >
               <h3 class="student-title">{member.name}</h3>
             </a>
           </li>
@@ -65,30 +64,22 @@
   }
 
   .squad-title {
-    /* position: relative; */
-    /* text-transform: uppercase; */
     text-align: center;
     position: absolute;
     top: 10px;
     left: 38%;
-    /* transform: translateY(-50%); */
     z-index: 3;
     margin: 5px;
-    /* font-size: 5em; */
   }
 
   .student-flag {
     position: absolute;
-    /* display: block; */
     background: var(--flag-color);
     height: 200px;
     top: 0px;
     left: 5%;
-    /* margin-left: 20px; */
-    /* transform: translateY(0px); */
     width: 100px;
     z-index: 3;
-    /* margin-top: 5em; */
   }
 
   .student-flag::before {
@@ -110,54 +101,39 @@
     align-items: center;
     margin: 0 auto;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 990px;
+    overflow: visible;
   }
 
   .book-background {
     position: absolute;
-    /* display: block; */
     top: 0px;
     left: 0;
     right: 0;
     bottom: 0;
-    /* width: 100%;
-    height: 100vh; */
     background: var(--book-border);
     border: 10px solid black;
     border-radius: 20px;
     z-index: 1;
-    /* margin-top: 30px; */
   }
 
   .book {
-    /* overflow: hidden; */
     display: flex;
-    /* flex-direction: column; */
     align-items: flex-start;
-    /* align-items: center; */
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    /* justify-content: center;
-    align-items: center; */
-    /* max-width: 1200px; */
-    /* min-height: 500px; */
-    /* min-height: 500px; */
-    /* border: 8px solid var(--edge);x */
     background: var(--paper);
     border-radius: 8px;
     border-left: 2em solid var(--side-border);
-    /* border-right: 1.5em solid #2f2213; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     padding-top: 2em;
     position: relative;
-    /* padding-top: 3em; */
     z-index: 2;
     max-width: 900px;
-
   }
 
   .book::before {
@@ -181,18 +157,10 @@
   .students {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows:  repeat(3, auto); */
     scroll-snap-align: start;
-    /* overflow: hidden; */
-    /* grid-auto-rows: 200px;  */
-    /* display: flex;
-    scroll-snap-align: center; */
-    /* flex-wrap: wrap; */
     gap: 20px;
-    /* justify-content: flex-start; */
     padding: 20px;
     flex: 0 0 100%;
-    /* flex: 0 0 auto; */
   }
 
   .students a {
@@ -200,13 +168,16 @@
   }
 
   .student {
-    /* width: calc(50% - 20px); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     gap: 1em;
+  }
+
+  a .student-title {
+    color: black;
   }
 
   @media (min-width: 375px) {
@@ -225,7 +196,6 @@
       justify-content: center;
       border-left: 1em solid var(--side-border);
       padding: 0;
-      /* padding: 45px; */
     }
 
     .students {
@@ -234,7 +204,6 @@
       width: 100%;
       gap: 10px;
       padding: 10px;
-      /* overflow-x: hidden; */
     }
 
     .student {
@@ -245,24 +214,6 @@
       align-items: center;
     }
   }
-
-  /* @media (max-width: 800px) {
-    .book {
-      flex-direction: column;
-      overflow-x: hidden;
-    }
-
-    .students {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, auto);
-    }
-
-    .student {
-      align-items: center;
-      width: 100%;
-    }
-  } */
 
   .student-img {
     object-fit: cover;
