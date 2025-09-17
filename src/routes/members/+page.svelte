@@ -13,8 +13,8 @@
 </script>
 
 <section class="flag-wrapper">
-<a href="/" class="student-flag"></a>
-<h1 class="squad-title">Squad 2F</h1>
+  <a href="/" class="student-flag"></a>
+  <h1 class="squad-title">Squad 2F</h1>
 </section>
 
 <!-- Hier itereer ik met een loop door alle members heen -->
@@ -55,26 +55,27 @@
     --book-border: #5d3027;
     --side-border: #c0b09d;
     --primary-bg-color: #2f2506;
-    --flag-color: #A80102;
+    --flag-color: #a80102;
   }
 
   .flag-wrapper {
     margin-top: 7em;
-    padding-top: 2em;  
-    margin-bottom: 1em;
-
+    padding-top: 2em;
+    margin-bottom: 3em;
   }
 
   .squad-title {
     /* position: relative; */
+    /* text-transform: uppercase; */
     text-align: center;
     position: absolute;
     top: 10px;
-    left: 35%; 
+    left: 38%;
     /* transform: translateY(-50%); */
     z-index: 3;
-    margin: 20px;
-}
+    margin: 5px;
+    /* font-size: 5em; */
+  }
 
   .student-flag {
     position: absolute;
