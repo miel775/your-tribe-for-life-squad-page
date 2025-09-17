@@ -24,6 +24,8 @@
 
 <a href="/squad"> <Schoolbuilding />  </a>
 
+<h1 class="title"> FDND </h1>
+
 <!-- i want a lot of clouds -->
 <div class=cloud> <Cloud1 /> </div>
 <div class=cloud> <Cloud2 /> </div>
@@ -31,10 +33,11 @@
 
 <Fog />
 
+<div class="ground"></div>
+
 
 <style>
   :root {
-    
     /* background-colors */
     --primary-bg-color: #2F2506;
     --secondary-bg-color: #6B5A24;
@@ -82,6 +85,37 @@
     margin: 0;
     min-height: 100vh;
     overflow: hidden;
+    background-color: var(--colour-tone-4);
+}
+
+.title {
+    font-size: var(--h1-desktop);
+    color: var(--colour-tone-2);
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+    -webkit-text-stroke: 1px var(--colour-tone-2-dark);
+
+    @media (max-width: 768px) {
+        font-size: var(--h1-tablet);
+    }
+    @media (max-width: 480px) {
+        font-size: var(--h1-mobile);
+    }
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: var(--colour-tone-5);
+    z-index: -1;
 }
 
 a {
@@ -99,6 +133,14 @@ a {
     z-index: 2;
     pointer-events: none;
     -webkit-text-stroke: 1px var(--colour-tone-2-dark);
+
+    @media (max-width: 768px) {
+        font-size: var(--p-tablet);
+    }
+
+    @media (max-width: 480px) {
+        font-size: var(--p-mobile);     
+    }
 }
 
 .cloud {

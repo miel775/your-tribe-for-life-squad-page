@@ -360,3 +360,11 @@
     <polygon class="cls-5" points="753.32 776.25 751.79 929.99 765.88 929.43 765.88 776.25 753.32 776.25"/>
     <polygon class="cls-5" points="836.83 783.55 835.29 926.17 849.39 926.17 849.39 781.32 836.83 783.55"/>
 </svg>
+
+<style>
+    .schoolbuilding {
+
+        /* if you swipe above you go to the next page */
+        touch-action: pan-y;
+    }
+</style>

@@ -1,7 +1,6 @@
 <script>
 	  import favicon from '$lib/assets/favicon.svg';
-    import '$lib/assets/styles/style.css';
-    import '$lib/assets/styles/home-style.css';
+    import '$lib/assets/styles/stylesheet.css';
     import Scene from "$lib/components/style.svelte";
     let { children } = $props();
 </script>
