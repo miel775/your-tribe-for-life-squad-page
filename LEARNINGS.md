@@ -88,7 +88,7 @@ _Je doet je best dat je goed inzet toont voor de groep. Je bent altijd communica
 * <ins>Miel:</ins>
 _Je werkt je taken uit. Ben benieuwd hoe het is geworden._
 
-# Individuele Feedback Inez
+### Individuele Feedback Inez
 
 #### **Hoe heb je mij als teamlid ervaren?**
 * <ins>Nadira:</ins>
@@ -127,30 +127,35 @@ Je bent attent in je studie._
 
 #### **Hoe heb je mij als teamlid ervaren?**
 * <ins>Nadira:</ins>
-_Wat je kan bereiken binnen eentijd een dat je aan de taken houdt. Je bent erg creatief._
+_Wat je kan bereiken binnen eentijd een dat je aan de taken houdt. Je bent erg creatief._ 
 * <ins>Akiko:</ins>
-* <ins>Miel:</ins>
-
+_Je goed de planning van school aanhoudt, je laat weten wat er gedaan moet worden. Goed dat je initiatief neemt. Eigen ideeën uitwerken._
+* <ins>Inez:</ins>
+_Je bent best wel serieus, je maakt een goede planning. Je gaat achter je taken aan en weet wat je wilt. Je bent best wel creatief en probeert het uit te werken._
 
 #### **Welke tips heb je voor mij?**
 * <ins>Nadira:</ins>
-_Jouw communicatie is minder. Ik heb nit zo snel door waar je mee bezig bent. Je werkt op jeuïgen structuur waardoor het clasht. Meer e groep betrekken. Als je oneens bent met iets, durf het te communiceren._
+_Jouw communicatie is minder. Ik heb niet zo snel door waar je mee bezig bent. Je werkt op eigen structuur waardoor het clasht. Meer de groep betrekken. Als je oneens bent met iets, durf het te communiceren. Meer communiceren waar je mee bezig bent._
 * <ins>Akiko:</ins>
+_Meer communicatie over je ideeën._
 * <ins>Inez:</ins>
-
+_Communiceer je idee ook met je teamgenoten. Wees communicatief in je beslissingen._
 
 #### **Wat zou ik moeten veranderen om prettiger samen te werken**
 * <ins>Nadira:</ins>
 _Meer communiceren._
 * <ins>Akiko:</ins>
+_Je bent wel te bereiken, maar soms kan je je eigen pad bewandelen. Het is goed om aan te geven om zelf aan te geven wanneer je iets moet bespreken._
 * <ins>Inez:</ins>
-
+_Sta open voor communicatie als je een beslissing. Maak een issue aan en schrijf het uit. Wachten met mergen en dat is nog lastiger als je niet weet wat je andere teamgenoten er van vinden._
 
 #### **Waar ben je trots op?**
 * <ins>Nadira:</ins>
 _Je kan heel duidelijk je ideeën verwoorden en zet het op in een mooi resultaat. Je hebt unieke ideeën als studenten en kan mooie dingen bereiken._
 * <ins>Akiko:</ins>
+_Je kan heel duidelijk je ideeën verwoorden en je zet dit ook in._
 * <ins>Inez:</ins>
+_Echt de creatieve kant laat zien. Achter je taken gaat en concreet bent in wat je af wilt krijgen._
 
 ## Teamvragen ronde
 
