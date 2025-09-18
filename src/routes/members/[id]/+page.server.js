@@ -6,3 +6,7 @@ export async function load({url, params}) {
         member: memberData.data
     };
 }
+
+  
+  
+  

@@ -31,15 +31,19 @@
       }
     }
   }
-</script>
+
+</script> 
+
+
+
 
 <section class="flag-wrapper">
-  <a href="/squad-overview" class="student-flag" aria-label="squadoverview"></a>
+  <a href="/" class="student-flag" aria-label="Homepagina"></a>
   <h1 class="squad-title" tabindex="0">Squad 2F</h1>
 </section>
 
 <!-- Hier itereer ik met een loop door alle members heen -->
-<section class="book-wrapper">
+ <section class="book-wrapper">
   <div class="book-background"></div>
   <section class="book">
     {#each chunks as slide}
@@ -63,7 +67,7 @@
       </ul>
     {/each}
   </section>
-</section>
+</section> 
 
 <style>
   h1,
