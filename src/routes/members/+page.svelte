@@ -41,8 +41,8 @@
 </script>
 
 <section class="flag-wrapper">
-  <a href="/" class="student-flag"></a>
-  <h1 class="squad-title">Squad 2F</h1>
+  <a href="/squad-overview" class="student-flag" aria-label="squadoverview"></a>
+  <h1 class="squad-title" tabindex="0">Squad 2F</h1>
 </section>
 
 <!-- url={member.imageUrl} -->
@@ -99,6 +99,7 @@
   }
 
   .squad-title {
+    position: relative;
     text-align: center;
     position: absolute;
     top: 10px;
@@ -126,6 +127,11 @@
   .student-flag:hover {
     transform: scale(1.1);
   }
+
+  .student-flag:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
 
   .student-flag::before {
     border-top: 35px solid var(--flag-color);
