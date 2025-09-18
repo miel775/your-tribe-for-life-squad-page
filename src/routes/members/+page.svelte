@@ -20,10 +20,9 @@
       member.avifUrl =
         member.webpUrl =
         member.fallbackUrl =
-          "/images/cursor.png";
+          "/images/person.png";
     }
   });
-
 
   if (members.length > 0) {
     for (let i = 0; i < members.length; i += perPage) {
@@ -39,8 +38,6 @@
   <a href="/squad-overview" class="student-flag" aria-label="squadoverview"></a>
   <h1 class="squad-title" tabindex="0">Squad 2F</h1>
 </section>
-
-<!-- url={member.imageUrl} -->
 
 <!-- Hier itereer ik met een loop door alle members heen -->
 <div class="book-wrapper">
@@ -60,7 +57,7 @@
                 width={200}
                 height={200}
               />
-              <h3 class="student-title">{member.name}</h3>
+              <h2 class="student-title">{member.name}</h2>
             </a>
           </li>
         {/each}
@@ -76,18 +73,14 @@
     font-weight: 700;
   }
 
-  h3 {
-    font-family: "Harry Potter", sans-serif;
-  }
-
   p,
   a {
     font-family: "Yellowtail", sans-serif;
   }
 
   :root {
-    --font-harry: 'Harry Potter', sans-serif;
-    --font-yellowtail: 'Yellowtail', sans-serif;
+    --font-harry: "Harry Potter", sans-serif;
+    --font-yellowtail: "Yellowtail", sans-serif;
     --paper: #e8dcc0;
     --ink: #2a1c0f;
     --edge: #2f2213;
@@ -98,7 +91,6 @@
     --flag-color: #a80102;
     --card-title-hover: brown;
     --card-title: black;
-
   }
 
   section {
@@ -250,6 +242,7 @@
   a .student-title {
     text-align: center;
     color: var(--card-title);
+    font-size: 1rem;
     transition: transform 0.3s ease-in-out;
   }
 
