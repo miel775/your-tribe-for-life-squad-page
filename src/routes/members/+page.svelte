@@ -56,7 +56,7 @@
                 avifUrl={member.avifUrl}
                 webpUrl={member.webpUrl}
                 fallbackUrl={member.fallbackUrl}
-                alt=Foto van ${member.name}
+                alt="Foto van ${member.name}"
                 width={200}
                 height={200}
               />
