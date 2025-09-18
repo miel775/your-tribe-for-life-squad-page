@@ -4,7 +4,6 @@
 
   export let data;
   const members = data.members || [];
-  console.log(data.members);
 
   const perPage = 6;
   const chunks = [];
@@ -95,7 +94,7 @@
 
   section {
     cursor:
-      url("/images/cursor.png") 16 16,
+      url("/images/person.png") 16 16,
       auto;
   }
 
