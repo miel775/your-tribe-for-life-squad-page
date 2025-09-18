@@ -46,12 +46,11 @@ if (members.length > 0) {
       <ul class="students">
         {#each slide as member}
           <li class="student">
-            <ResponsiveImage 
+            <ResponsiveImage    class="student-img"
               url={member.mugshot ? `https://fdnd.directus.app/assets/${member.mugshot}` : '/images/cursor.png'}
               alt={member.name} 
               width={200}
               height={200}
-              class="student-img"
             />
             <a href={`/members/${member.id}`} >
               <h3 class="student-title">{member.name}</h3>
@@ -274,17 +273,5 @@ if (members.length > 0) {
 
   }
 
-  .student-img {
-    display: inline-block;
-    object-fit: cover;
-    width: 200px;
-    height: 200px; 
-    transition: transform 0.3s ease-in-out;
-    cursor: url('/images/cursor.png') 16 16, auto; 
-    border-radius: 8px;
-  }
 
-  .student-img:hover {
-   transform: scale(1.1);
-  }
 </style>
