@@ -23,11 +23,7 @@
           "/images/cursor.png";
     }
   });
-  //   members.forEach(member => {
-  //     member.imageUrl = member.mugshot
-  //       ? `${baseUrl}${member.mugshot}?width=400&format=webp`
-  //       : "/images/cursor.png";
-  //   });
+
 
   if (members.length > 0) {
     for (let i = 0; i < members.length; i += perPage) {
@@ -60,7 +56,7 @@
                 avifUrl={member.avifUrl}
                 webpUrl={member.webpUrl}
                 fallbackUrl={member.fallbackUrl}
-                alt={member.name}
+                alt=Foto van ${member.name}
                 width={200}
                 height={200}
               />
