@@ -1,21 +1,42 @@
 <!--  Hier importeer ik de data die ik in +page.server.js heb opgehaald -->
 <script>
-  let { data } = $props();
-  const members = data.members;
+
+import ResponsiveImage from '$lib/components/ResponsiveImage.svelte';
+
+//   let { data } = $props();
+  export let data;
+  const members = data.members || [];
+
+//   const members = data.members;
 
   const perPage = 6;
   const chunks = [];
 
-  for (let startIndex = 0; startIndex < members.length; startIndex += perPage) {
-    const block = members.slice(startIndex, startIndex + perPage);
-    chunks.push(block);
+if (members.length > 0) {
+  for (let i = 0; i < members.length; i += perPage) {
+    const chunk = members.slice(i, i + perPage);
+    if (chunk.length > 0) {
+      chunks.push(chunk);
+    }
   }
+}
+
+//   for (let i = 0; i < members.length; i += perPage) {
+//     chunks.push(members.slice(i, i + perPage));
+//   }
+//   for (let startIndex = 0; startIndex < members.length; startIndex += perPage) {
+//     const block = members.slice(startIndex, startIndex + perPage);
+//     chunks.push(block);
+//   }
+
 </script>
+
 
 <section class="flag-wrapper">
   <a href="/" class="student-flag"></a>
   <h1 class="squad-title">Squad 2F</h1>
 </section>
+
 
 <!-- Hier itereer ik met een loop door alle members heen -->
 <div class="book-wrapper">
@@ -25,14 +46,11 @@
       <ul class="students">
         {#each slide as member}
           <li class="student">
-            <!-- <img
-          src={member.avatar}
-          class="student-img"
-          alt="Avatar van {member.name}"
-        /> -->
-            <img
-              src={`https://fdnd.directus.app/assets/${member.mugshot}`}
-              alt={member.name}
+            <ResponsiveImage 
+              url={member.mugshot ? `https://fdnd.directus.app/assets/${member.mugshot}` : '/images/cursor.png'}
+              alt={member.name} 
+              width={200}
+              height={200}
               class="student-img"
             />
             <a href={`/members/${member.id}`} >
@@ -56,6 +74,10 @@
     --primary-bg-color: #2f2506;
     --flag-color: #a80102;
   }
+
+  section {
+  cursor: url('/images/cursor.png')16 16, auto;
+}
 
   .flag-wrapper {
     margin-top: 7em;
@@ -144,23 +166,31 @@
     position: relative;
     z-index: 2;
     max-width: 900px;
+    height: 100%;
   }
 
   .book::before {
     content: "";
     position: absolute;
+    /* position: sticky; */
     top: 0px;
     bottom: 0;
     left: 50%;
     width: 1px;
+    height: 100%;
     background: black;
     display: none;
     z-index: 2;
+    /* display: block; */
   }
 
   @media (min-width: 800px) {
     .book::before {
       display: block;
+    }
+
+    .student-flag {
+        transform: scale(1.0);
     }
   }
 
@@ -187,8 +217,14 @@
   }
 
   a .student-title {
+    font-family: 'Harry Potter', sans-serif;
     color: black;
   }
+
+  .student-title:hover {
+    color: brown;
+  }
+
 
   @media (min-width: 375px) {
     .book {
@@ -208,6 +244,12 @@
       padding: 0;
     }
 
+    /* .book::before {
+        display: block;
+        left: 50%;
+        height: 100%;
+    } */
+
     .students {
       display: flex;
       flex-direction: column;
@@ -223,18 +265,26 @@
       justify-content: center;
       align-items: center;
     }
+
+    /* .student-img {
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+    } */
+
   }
 
   .student-img {
+    display: inline-block;
     object-fit: cover;
     width: 200px;
-    height: 200px;
+    height: 200px; 
     transition: transform 0.3s ease-in-out;
-    /* border-radius: 8px; */
+    cursor: url('/images/cursor.png') 16 16, auto; 
+    border-radius: 8px;
   }
 
   .student-img:hover {
    transform: scale(1.1);
-   
   }
 </style>
