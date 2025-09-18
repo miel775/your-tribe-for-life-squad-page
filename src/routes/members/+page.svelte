@@ -4,31 +4,30 @@
 
   export let data;
   const members = data.members || [];
-  console.log(data.members)
+  console.log(data.members);
 
   const perPage = 6;
   const chunks = [];
 
-
   const baseUrl = "https://fdnd.directus.app/assets/";
 
-
-  members.forEach(member => {
-  if (member.mugshot) {
-    member.avifUrl = `${baseUrl}${member.mugshot}?width=400&format=avif`;
-    member.webpUrl = `${baseUrl}${member.mugshot}?width=400&format=webp`;
-    member.fallbackUrl = `${baseUrl}${member.mugshot}?width=400`;
-  } else {
-    member.avifUrl = member.webpUrl = member.fallbackUrl = "/images/cursor.png";
-  }
-});
-//   members.forEach(member => {
-//     member.imageUrl = member.mugshot
-//       ? `${baseUrl}${member.mugshot}?width=400&format=webp`
-//       : "/images/cursor.png";
-//   });
-
-
+  members.forEach((member) => {
+    if (member.mugshot) {
+      member.avifUrl = `${baseUrl}${member.mugshot}?width=400&format=avif`;
+      member.webpUrl = `${baseUrl}${member.mugshot}?width=400&format=webp`;
+      member.fallbackUrl = `${baseUrl}${member.mugshot}?width=400`;
+    } else {
+      member.avifUrl =
+        member.webpUrl =
+        member.fallbackUrl =
+          "/images/cursor.png";
+    }
+  });
+  //   members.forEach(member => {
+  //     member.imageUrl = member.mugshot
+  //       ? `${baseUrl}${member.mugshot}?width=400&format=webp`
+  //       : "/images/cursor.png";
+  //   });
 
   if (members.length > 0) {
     for (let i = 0; i < members.length; i += perPage) {
@@ -56,15 +55,15 @@
         {#each slide as member}
           <li class="student">
             <a href={`/members/${member.id}`}>
-            <ResponsiveImage
-              class="student-img"
-              avifUrl={member.avifUrl}
-              webpUrl={member.webpUrl}
-              fallbackUrl={member.fallbackUrl}
-              alt={member.name}
-              width={200}
-              height={200}
-            />
+              <ResponsiveImage
+                class="student-img"
+                avifUrl={member.avifUrl}
+                webpUrl={member.webpUrl}
+                fallbackUrl={member.fallbackUrl}
+                alt={member.name}
+                width={200}
+                height={200}
+              />
               <h3 class="student-title">{member.name}</h3>
             </a>
           </li>
@@ -75,15 +74,35 @@
 </div>
 
 <style>
+  h1,
+  h2 {
+    font-family: "Harry Potter", sans-serif;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-family: "Harry Potter", sans-serif;
+  }
+
+  p,
+  a {
+    font-family: "Yellowtail", sans-serif;
+  }
+
   :root {
+    --font-harry: 'Harry Potter', sans-serif;
+    --font-yellowtail: 'Yellowtail', sans-serif;
     --paper: #e8dcc0;
     --ink: #2a1c0f;
     --edge: #2f2213;
     --accent: #5d1212;
-    --book-border: #5d3027;
+    --book-border-one: #5d3027;
+    --book-border-two: black;
     --side-border: #c0b09d;
-    --primary-bg-color: #2f2506;
     --flag-color: #a80102;
+    --card-title-hover: brown;
+    --card-title: black;
+
   }
 
   section {
@@ -129,9 +148,9 @@
   }
 
   .student-flag:focus {
-   outline: 3px solid var(--accent);
-   outline-offset: 4px;
-}
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+  }
 
   .student-flag::before {
     border-top: 35px solid var(--flag-color);
@@ -161,8 +180,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--book-border);
-    border: 10px solid black;
+    background: var(--book-border-one);
+    border: 10px solid var(--book-border-two);
     border-radius: 20px;
     z-index: 1;
   }
@@ -190,7 +209,6 @@
   .book::before {
     content: "";
     position: absolute;
-    /* position: sticky; */
     top: 0px;
     bottom: 0;
     left: 50%;
@@ -199,7 +217,6 @@
     background: black;
     display: none;
     z-index: 2;
-    /* display: block; */
   }
 
   @media (min-width: 800px) {
@@ -236,12 +253,13 @@
 
   a .student-title {
     text-align: center;
-    font-family: "Harry Potter", sans-serif;
-    color: black;
+    color: var(--card-title);
+    transition: transform 0.3s ease-in-out;
   }
 
   .student-title:hover {
-    color: brown;
+    transform: scale(1.2);
+    color: var(--card-title-hover);
   }
 
   @media (min-width: 375px) {
