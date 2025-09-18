@@ -34,7 +34,7 @@ _Ideeën goed en creatief waardoor het de squadpage unique maakt._
 _Op school geef ik aan waar ik moeite mee heb maar thuis niet zo vaak. Het is beter meteen hulp te vragen dan af te wachten.
 Ik heb een duwtje nodig want zodra ik die krijg, ga ik goed te werk._
 * <ins>Nadira:</ins>
-_Je kijkt veel naar wat anderen doet. Je vergeet jezelf als je focust op anderen en tijd verliest op wat jij nodig hebt. Hierdoor loopt je frustratie op in jezelf en houdt je het in._
+_Je let goed op wat anderen nodig hebben. Als je daarnaast ook bewust tijd neemt voor je eigen taken, houd je je energie op peil en kun je anderen beter ondersteunen_
 * <ins>Miel:</ins>
 _Het ontwerp was misschien te groot. Kleinere stappen  maken om het project realistisch maken._
 
