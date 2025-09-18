@@ -55,6 +55,7 @@
       <ul class="students">
         {#each slide as member}
           <li class="student">
+            <a href={`/members/${member.id}`}>
             <ResponsiveImage
               class="student-img"
               avifUrl={member.avifUrl}
@@ -64,7 +65,6 @@
               width={200}
               height={200}
             />
-            <a href={`/members/${member.id}`}>
               <h3 class="student-title">{member.name}</h3>
             </a>
           </li>
@@ -129,8 +129,8 @@
   }
 
   .student-flag:focus {
-  outline: 3px solid var(--accent);
-  outline-offset: 4px;
+   outline: 3px solid var(--accent);
+   outline-offset: 4px;
 }
 
   .student-flag::before {
@@ -235,6 +235,7 @@
   }
 
   a .student-title {
+    text-align: center;
     font-family: "Harry Potter", sans-serif;
     color: black;
   }
