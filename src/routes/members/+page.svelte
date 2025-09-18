@@ -40,7 +40,7 @@
 </section>
 
 <!-- Hier itereer ik met een loop door alle members heen -->
-<div class="book-wrapper">
+<section class="book-wrapper">
   <div class="book-background"></div>
   <section class="book">
     {#each chunks as slide}
@@ -64,7 +64,7 @@
       </ul>
     {/each}
   </section>
-</div>
+</section>
 
 <style>
   h1,
@@ -171,10 +171,16 @@
     background: var(--book-border-one);
     border: 10px solid var(--book-border-two);
     border-radius: 20px;
-    z-index: 1;
+    z-index: 0;
+    inset: 0
   }
 
-  .book {
+  /* .book {
+    scroll-snap-type: none;
+    z-index: 1;
+  } */
+
+    .book {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -189,10 +195,10 @@
     margin: 0 auto;
     padding-top: 2em;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     max-width: 900px;
     height: 100%;
-  }
+  }  
 
   .book::before {
     content: "";
@@ -206,6 +212,21 @@
     display: none;
     z-index: 2;
   }
+
+  @supports not (scroll-snap-type: x mandatory) {
+  .book {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    scroll-snap-type: none;
+  }
+
+  .students {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+  }
+}
 
   @media (min-width: 800px) {
     .book::before {

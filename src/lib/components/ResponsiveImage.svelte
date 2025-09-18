@@ -15,6 +15,7 @@
 {/if}
 
 <style>
+
   .student-img {
     display: inline-block;
     object-fit: cover;
