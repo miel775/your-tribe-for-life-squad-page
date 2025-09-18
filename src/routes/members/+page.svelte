@@ -21,13 +21,6 @@ if (members.length > 0) {
   }
 }
 
-//   for (let i = 0; i < members.length; i += perPage) {
-//     chunks.push(members.slice(i, i + perPage));
-//   }
-//   for (let startIndex = 0; startIndex < members.length; startIndex += perPage) {
-//     const block = members.slice(startIndex, startIndex + perPage);
-//     chunks.push(block);
-//   }
 
 </script>
 
@@ -122,7 +115,6 @@ if (members.length > 0) {
     left: 0;
     position: absolute;
     bottom: -35px;
-    /* width: 0px; */
   }
 
   .book-wrapper {
@@ -243,12 +235,6 @@ if (members.length > 0) {
       padding: 0;
     }
 
-    /* .book::before {
-        display: block;
-        left: 50%;
-        height: 100%;
-    } */
-
     .students {
       display: flex;
       flex-direction: column;
@@ -264,12 +250,6 @@ if (members.length > 0) {
       justify-content: center;
       align-items: center;
     }
-
-    /* .student-img {
-        object-fit: cover;
-        width: 250px;
-        height: 250px;
-    } */
 
   }
 

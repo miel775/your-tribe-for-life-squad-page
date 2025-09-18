@@ -1,11 +1,9 @@
 <script>
-
+        
 export let url = '';  
 export let alt = ''; 
 export let width = 200; 
 export let height = 200; 
-// export let $$restProps; 
-// export let sizes = '200px';
 
 </script>
 
