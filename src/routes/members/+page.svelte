@@ -1,35 +1,51 @@
 <!--  Hier importeer ik de data die ik in +page.server.js heb opgehaald -->
 <script>
+  import ResponsiveImage from "$lib/components/ResponsiveImage.svelte";
 
-import ResponsiveImage from '$lib/components/ResponsiveImage.svelte';
-
-//   let { data } = $props();
   export let data;
   const members = data.members || [];
-
-//   const members = data.members;
+  console.log(data.members)
 
   const perPage = 6;
   const chunks = [];
 
-if (members.length > 0) {
-  for (let i = 0; i < members.length; i += perPage) {
-    const chunk = members.slice(i, i + perPage);
-    if (chunk.length > 0) {
-      chunks.push(chunk);
+
+  const baseUrl = "https://fdnd.directus.app/assets/";
+
+
+  members.forEach(member => {
+  if (member.mugshot) {
+    member.avifUrl = `${baseUrl}${member.mugshot}?width=400&format=avif`;
+    member.webpUrl = `${baseUrl}${member.mugshot}?width=400&format=webp`;
+    member.fallbackUrl = `${baseUrl}${member.mugshot}?width=400`;
+  } else {
+    member.avifUrl = member.webpUrl = member.fallbackUrl = "/images/cursor.png";
+  }
+});
+//   members.forEach(member => {
+//     member.imageUrl = member.mugshot
+//       ? `${baseUrl}${member.mugshot}?width=400&format=webp`
+//       : "/images/cursor.png";
+//   });
+
+
+
+  if (members.length > 0) {
+    for (let i = 0; i < members.length; i += perPage) {
+      const chunk = members.slice(i, i + perPage);
+      if (chunk.length > 0) {
+        chunks.push(chunk);
+      }
     }
   }
-}
-
-
 </script>
-
 
 <section class="flag-wrapper">
   <a href="/" class="student-flag"></a>
   <h1 class="squad-title">Squad 2F</h1>
 </section>
 
+<!-- url={member.imageUrl} -->
 
 <!-- Hier itereer ik met een loop door alle members heen -->
 <div class="book-wrapper">
@@ -39,13 +55,16 @@ if (members.length > 0) {
       <ul class="students">
         {#each slide as member}
           <li class="student">
-            <ResponsiveImage    class="student-img"
-              url={member.mugshot ? `https://fdnd.directus.app/assets/${member.mugshot}` : '/images/cursor.png'}
-              alt={member.name} 
+            <ResponsiveImage
+              class="student-img"
+              avifUrl={member.avifUrl}
+              webpUrl={member.webpUrl}
+              fallbackUrl={member.fallbackUrl}
+              alt={member.name}
               width={200}
               height={200}
             />
-            <a href={`/members/${member.id}`} >
+            <a href={`/members/${member.id}`}>
               <h3 class="student-title">{member.name}</h3>
             </a>
           </li>
@@ -68,8 +87,10 @@ if (members.length > 0) {
   }
 
   section {
-  cursor: url('/images/cursor.png')16 16, auto;
-}
+    cursor:
+      url("/images/cursor.png") 16 16,
+      auto;
+  }
 
   .flag-wrapper {
     margin-top: 7em;
@@ -88,7 +109,7 @@ if (members.length > 0) {
   }
 
   .squad-title:hover {
-    transform:scale(1.2);
+    transform: scale(1.2);
   }
 
   .student-flag {
@@ -181,7 +202,7 @@ if (members.length > 0) {
     }
 
     .student-flag {
-        transform: scale(1.0);
+      transform: scale(1);
     }
   }
 
@@ -208,14 +229,13 @@ if (members.length > 0) {
   }
 
   a .student-title {
-    font-family: 'Harry Potter', sans-serif;
+    font-family: "Harry Potter", sans-serif;
     color: black;
   }
 
   .student-title:hover {
     color: brown;
   }
-
 
   @media (min-width: 375px) {
     .book {
@@ -250,8 +270,5 @@ if (members.length > 0) {
       justify-content: center;
       align-items: center;
     }
-
   }
-
-
 </style>
