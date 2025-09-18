@@ -53,6 +53,31 @@
         border: .3em solid #670f0f;
     }
 
+    a {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.6rem 1.2rem;
+        background-color: #670f0f; 
+        color: #fff;
+        text-decoration: none;
+        border-radius: 0.5em;
+        font-family: 'Harry Potter', sans-serif;
+        letter-spacing: 0.2em;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+        box-shadow: 0 0 0 2px #670f0f, 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+     a:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 0 10px #670f0f, 0 6px 12px rgba(0,0,0,0.4);
+        background: linear-gradient(45deg, #670f0f, #8c1515);
+    }
+
+    a:active {
+        transform: scale(0.95);
+        box-shadow: 0 0 6px #670f0f inset;
+    } 
+
     .book {
         display: grid;
         grid-template-columns: 1fr;
@@ -64,7 +89,7 @@
         border-radius: 1em;
         background: repeating-linear-gradient(0deg, transparent 0 22px, rgba(0, 0, 0, 0.262) 22px 23px),beige;
         padding: 1em;
-         box-shadow: 0 0 0 6px #5a432a, inset 0 0 0 2px #1e140a;
+        box-shadow: 0 0 0 6px #5a432a, inset 0 0 0 2px #1e140a;
     }
 
     @media (min-width: 720px) {
