@@ -74,7 +74,7 @@ Maak een overzichtspagina en een detailpagina voor je project op basis van de RA
 - Begin component-based met het opzetten van je templates
 - Genereer een lijst met squad_leaders in je templates
 
-### Leervragen
+### ✒️ Leervragen
 
 Zet de antwoorden in je learning journal.
 

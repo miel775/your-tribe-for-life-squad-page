@@ -3,11 +3,19 @@ export async function load({ params }) {
   try {
     const res = await fetch(`https://fdnd.directus.app/items/squad/${id}`);
     if (!res.ok) {
-      return { squad: null };
+      return { squad: null, members: [] };
     }
     const data = await res.json();
-    return { squad: data.data };
-  } catch (error) {
-    return { squad: null };
+
+    const membersRes = await fetch(
+      `https://fdnd.directus.app/items/person?filter[squads][squad_id][_eq]=${id}`
+    );
+    const membersData = await membersRes.json();
+
+    return { squad: data.data, members: membersData.data };
+  } 
+  catch (error) {
+    console.log('Error:', error);
+    return { squad: null, members: [] };
   }
 }
