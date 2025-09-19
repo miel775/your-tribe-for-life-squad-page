@@ -1,10 +1,3 @@
-// export async function load({ url }) {
-//   const squadsResponse = await fetch(`https://fdnd.directus.app/items/squads?filter[cohort][_eq]=2526`);
-//   const squadsData = await squadsResponse.json();
-
-//   return {squads: squadsData.data};
-// }
-
 export async function load({ url }) {
     try {
         const squadsResponse = await fetch("https://fdnd.directus.app/items/squad?filter[cohort][_eq]=2526");
